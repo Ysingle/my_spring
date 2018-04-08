@@ -1,0 +1,22 @@
+<component name="ArtifactManager">
+  <artifact type="exploded-war" name="mockservice_helloworld:war exploded">
+    <output-path>$PROJECT_DIR$/target/mockservice_helloworld</output-path>
+    <root id="root">
+      <element id="directory" name="WEB-INF">
+        <element id="directory" name="classes">
+          <element id="module-output" name="mockservice_helloworld" />
+        </element>
+        <element id="directory" name="lib">
+          <element id="archive" name="mockservice_helloworld-1.0-SNAPSHOT.jar">
+            <element id="module-output" name="mockservice_helloworld" />
+          </element>
+          <element id="library" level="project" name="Maven: org.springframework:spring-context:unknown" />
+        </element>
+      </element>
+      <element id="directory" name="META-INF">
+        <element id="file-copy" path="$PROJECT_DIR$/target/mockservice_helloworld/META-INF/MANIFEST.MF" />
+      </element>
+      <element id="javaee-facet-resources" facet="mockservice_helloworld/web/Web" />
+    </root>
+  </artifact>
+</component>
