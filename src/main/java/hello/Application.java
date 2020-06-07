@@ -1,19 +1,24 @@
 package hello;
 
-import org.slf4j.Logger;
-import org.slf4j.LoggerFactory;
 import org.springframework.boot.SpringApplication;
 import org.springframework.boot.autoconfigure.SpringBootApplication;
-import org.springframework.boot.autoconfigure.mongo.MongoAutoConfiguration;
 
-@SpringBootApplication(exclude = MongoAutoConfiguration.class)
-public class Application {
-
-    private static final Logger logger = LoggerFactory.getLogger(Application.class);
-
-    public static void main(String[] args) {
+/**
+ * springboot 已经启动内嵌的是tomcat 默认的端口是8080
+ *
+ *
+ * @author yangcb
+ *
+ */
+//@SpringBootApplication相当于@Configuration、@EnableAutoConfiguration和  @ComponentScan
+@SpringBootApplication
+public class Application
+{
+    public static void main( String[] args )
+    {
         SpringApplication.run(Application.class, args);
-
-        logger.info("------------- mockserver_domo Started -------------");
     }
 }
+
+
+
